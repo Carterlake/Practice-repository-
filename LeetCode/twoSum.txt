@@ -1,0 +1,18 @@
+class Solution {
+         public int [] twoSum(int[] nums,int target){
+           int i = 0,j = 0,n = 0;
+             n  = nums.length;
+             for(;i < n;i++){
+                 for(j = 1;j < n ;j++){
+                     if(i==j)continue;
+
+                     if(nums[i] + nums[j] == target){
+                         int[] r = {i,j};
+                         return r;
+                     }
+
+                 }
+             }
+             return null;
+         }
+}
